@@ -1,11 +1,11 @@
 <?php 
 return 
 [
-    '~^$~' => '/templates/main.php',
-    '~^add$~' => '/templates/add.php',
-    '~^delete$~' => '/templates/delete.php',
-    '~^edit$~' => '/templates/edit.php',
-    '~^login$~' => '/templates/login.php',
-    '~^logout$~' => '/templates/logout.php',
-    '~^registration$~' => '/templates/registration.php'
+    '~^$~' => '\Src\App\Models\Task',
+    '~^add$~' => '\Src\App\Models\Task',
+    '~^delete$~' => '\Src\App\Models\Task',
+    '~^edit$~' => '\Src\App\Models\Task',
+    '~^login$~' => '\Src\App\Models\User',
+    '~^logout$~' => '\Src\App\Models\User',
+    '~^registration$~' => '\Src\App\Models\User'
 ];
