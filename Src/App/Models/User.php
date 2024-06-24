@@ -9,9 +9,9 @@ class User extends CrudModel
     public $authtoken;
     public $tableName;
 
-    public function __construct(string $templateName)
+    public function __construct()
     {
-        parent::__construct($templateName);
+        parent::__construct();
         $this->tableName = '`users`';
     }
 

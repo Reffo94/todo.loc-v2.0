@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . '/main/header.php';?>
     <h1>MAIN PAGE</h1>
-    <?php foreach ($tasks as $task):?>
+    <?php foreach ($content as $task):?>
         <hr>
         <p>id: <?=$task->id?></p>
         <p>name: <?=$task->name?></p>

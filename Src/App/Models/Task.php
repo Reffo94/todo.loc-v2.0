@@ -12,9 +12,9 @@ class Task extends CrudModel
     public $templateName;
     public $tableName;
 
-    public function __construct(string $templateName)
+    public function __construct()
     {
-        parent::__construct($templateName);
+        parent::__construct();
         $this->tableName = '`tasks`';
     }
 }

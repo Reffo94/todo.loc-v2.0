@@ -16,14 +16,14 @@ class MainController
         $this->templateName = $templateName;
         $this->className = $className;
         $this->view = new View($templateName);
-        $this->class = new $className($templateName);
+        $this->class = new $className();
 
     }
     public function main()
     {
         $method = $this->class->chooseMethod();
-        $tasks = $this->class->$method($this->class->tableName);
-        $this->view->renderPage($this->templateName, ['tasks' => $tasks]);
+        $content = $this->class->$method($this->class->tableName);
+        $this->view->renderPage($this->templateName, ['content' => $content]);
     }      
     public function pageNotFound()
     {

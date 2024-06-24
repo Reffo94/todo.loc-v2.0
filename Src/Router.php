@@ -29,21 +29,6 @@ class Router
                 break;
             }
         }
-        
-        
-        // foreach ($routesKeys as $url) {
-        //     preg_match($url, $route, $matches);
-        //     if (!empty($matches)) {
-        //         $this->isRouteFound = true;
-        //         if ($matches[0] == '') {
-        //             $this->templateName = 'main';
-        //         }else{
-        //             $this->templateName = $matches[0];
-        //         }
-        //         break;
-        //     }
-        //     // $this->className = $className;
-        // }
     }
 }
 
