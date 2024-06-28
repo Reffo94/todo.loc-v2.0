@@ -21,9 +21,9 @@ class MainController
     }
     public function main()
     {
-        $method = $this->class->chooseMethod();
-        dump($this->class->chooseMethod());
-        $content = $this->class->$method($this->class->tableName);
+        $method = $this->class->chooseMethod($this->templateName);
+        dump($this->class->chooseMethod($this->templateName));
+        $content = $this->class->$method($this->class->tableName, $columns = '', $values = []);
         $this->view->renderPage($this->templateName, ['content' => $content]);
     }      
     public function pageNotFound()

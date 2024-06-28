@@ -11,8 +11,7 @@ require_once __DIR__ . '/functions.php';
 
 $router = new Router();
 
-$d = 'sd';
-dump(isset($d));
+dump($_POST);
 
 dump($router);
 
