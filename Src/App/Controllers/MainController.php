@@ -22,6 +22,7 @@ class MainController
     public function main()
     {
         $method = $this->class->chooseMethod();
+        dump($this->class->chooseMethod());
         $content = $this->class->$method($this->class->tableName);
         $this->view->renderPage($this->templateName, ['content' => $content]);
     }      
